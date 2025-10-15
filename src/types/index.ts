@@ -9,6 +9,7 @@ export interface Course {
   duration?: string;
   description?: string;
   curriculum?: string[];
+  image: string;         // ✅ Added image field
   isFeatured?: boolean;
 }
 

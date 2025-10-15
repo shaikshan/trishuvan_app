@@ -10,6 +10,18 @@ interface CourseCardProps {
 export default function CourseCard({ course, onEnroll }: CourseCardProps) {
   return (
     <div className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden border border-gray-100">
+
+      {/* Course Image */}
+      {course.image && (
+        <div className="h-48 w-full overflow-hidden">
+          <img
+            src={course.image}
+            alt={course.title}
+            className="w-full h-full object-cover"
+          />
+        </div>
+      )}
+
       <div className="bg-gradient-to-br from-cyan-50 to-blue-50 p-6 border-b border-gray-100">
         <h3 className="text-xl font-bold text-gray-900 mb-2">{course.title}</h3>
         <div className="flex flex-wrap gap-2 mb-3">

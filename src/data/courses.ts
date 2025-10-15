@@ -10,7 +10,8 @@ export const courses: Course[] = [
     dateEN: '19 Oct',
     dateTE: '26 Oct',
     duration: '4 Weekends',
-    description: 'Master 15+ AI Tools & Automate Tasks Using Prompt Engineering. Learn to leverage ChatGPT, Gemini, and other cutting-edge AI tools to boost your productivity.',
+    description:
+      'Master 15+ AI Tools & Automate Tasks Using Prompt Engineering. Learn to leverage ChatGPT, Gemini, and other cutting-edge AI tools to boost your productivity.',
     curriculum: [
       'Introduction to AI Tools',
       'ChatGPT Advanced Techniques',
@@ -19,6 +20,7 @@ export const courses: Course[] = [
       'Automation Workflows',
       'Real-world Applications'
     ],
+    image: '/images/courses/ai-tool-kit.jpg',
     isFeatured: true
   },
   {
@@ -30,7 +32,8 @@ export const courses: Course[] = [
     dateEN: '1 Nov',
     dateTE: '8 Nov',
     duration: '4 Weekends',
-    description: 'Master SQL from basics to advanced concepts. Learn PostgreSQL, complex queries, and database optimization techniques.',
+    description:
+      'Master SQL from basics to advanced concepts. Learn PostgreSQL, complex queries, and database optimization techniques.',
     curriculum: [
       'SQL Fundamentals',
       'Advanced Joins & Subqueries',
@@ -39,6 +42,7 @@ export const courses: Course[] = [
       'Query Optimization',
       'Real Database Projects'
     ],
+    image: '/images/courses/sql-mastery.jpg',
     isFeatured: true
   },
   {
@@ -50,7 +54,8 @@ export const courses: Course[] = [
     dateEN: '15 Nov',
     dateTE: '22 Nov',
     duration: '4 Weekends',
-    description: 'Learn Python programming with focus on AI and data science. Master NumPy, Pandas, and API integration.',
+    description:
+      'Learn Python programming with focus on AI and data science. Master NumPy, Pandas, and API integration.',
     curriculum: [
       'Python Fundamentals',
       'NumPy for Numerical Computing',
@@ -59,6 +64,7 @@ export const courses: Course[] = [
       'Data Processing',
       'AI Project Setup'
     ],
+    image: '/images/courses/python-for-ai.jpg',
     isFeatured: true
   },
   {
@@ -70,7 +76,8 @@ export const courses: Course[] = [
     dateEN: '29 Nov',
     dateTE: '6 Dec',
     duration: '4 Weekends',
-    description: 'Create stunning data visualizations and interactive dashboards. Master DAX and data modeling techniques.',
+    description:
+      'Create stunning data visualizations and interactive dashboards. Master DAX and data modeling techniques.',
     curriculum: [
       'Power BI Basics',
       'Data Modeling',
@@ -79,6 +86,7 @@ export const courses: Course[] = [
       'Dashboard Design',
       'Data Storytelling'
     ],
+    image: '/images/courses/power-bi.jpg',
     isFeatured: true
   },
   {
@@ -90,7 +98,8 @@ export const courses: Course[] = [
     dateEN: '29 Nov',
     dateTE: '6 Dec',
     duration: '6 Weekends',
-    description: 'Build, train, and deploy machine learning models. Learn regression, classification, and model deployment.',
+    description:
+      'Build, train, and deploy machine learning models. Learn regression, classification, and model deployment.',
     curriculum: [
       'ML Fundamentals',
       'Supervised Learning',
@@ -99,6 +108,7 @@ export const courses: Course[] = [
       'Model Evaluation',
       'Deployment Strategies'
     ],
+    image: '/images/courses/machine-learning.jpg',
     isFeatured: true
   },
   {
@@ -110,7 +120,8 @@ export const courses: Course[] = [
     dateEN: '13 Dec',
     dateTE: '20 Dec',
     duration: '6 Weekends',
-    description: 'Build your own AI agents and LangChain workflows. Master the future of artificial intelligence.',
+    description:
+      'Build your own AI agents and LangChain workflows. Master the future of artificial intelligence.',
     curriculum: [
       'Introduction to Gen AI',
       'LLM Fundamentals',
@@ -119,6 +130,7 @@ export const courses: Course[] = [
       'Building AI Agents',
       'Production Deployment'
     ],
+    image: '/images/courses/gen-ai-agentic.jpg',
     isFeatured: true
   }
 ];

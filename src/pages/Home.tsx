@@ -12,8 +12,10 @@ export default function Home() {
 
   return (
     <div>
+      {/* Hero Slider */}
       <HeroSlider />
 
+      {/* Why Trishuvaan Section */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
@@ -24,41 +26,28 @@ export default function Home() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="text-center p-6 rounded-xl bg-gradient-to-br from-cyan-50 to-blue-50 border border-cyan-100 hover:shadow-lg transition-shadow">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-cyan-600 to-blue-600 rounded-full mb-4">
-                <Target className="w-8 h-8 text-white" />
+            {[
+              { icon: Target, title: '🎯 Live Learning', desc: '100% interactive sessions — no recordings' },
+              { icon: Briefcase, title: '💼 Career Focus', desc: 'Internship & job assistance after every course' },
+              { icon: Brain, title: '🧠 Bilingual', desc: 'English & Telugu batches available' },
+              { icon: Rocket, title: '🚀 Project-Based', desc: 'Real-world deployment and portfolio guidance' },
+            ].map((item, idx) => (
+              <div
+                key={idx}
+                className="text-center p-6 rounded-xl bg-gradient-to-br from-cyan-50 to-blue-50 border border-cyan-100 hover:shadow-lg transition-shadow"
+              >
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-cyan-600 to-blue-600 rounded-full mb-4">
+                  <item.icon className="w-8 h-8 text-white" />
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">{item.title}</h3>
+                <p className="text-gray-600">{item.desc}</p>
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">🎯 Live Learning</h3>
-              <p className="text-gray-600">100% interactive sessions — no recordings</p>
-            </div>
-
-            <div className="text-center p-6 rounded-xl bg-gradient-to-br from-cyan-50 to-blue-50 border border-cyan-100 hover:shadow-lg transition-shadow">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-cyan-600 to-blue-600 rounded-full mb-4">
-                <Briefcase className="w-8 h-8 text-white" />
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">💼 Career Focus</h3>
-              <p className="text-gray-600">Internship & job assistance after every course</p>
-            </div>
-
-            <div className="text-center p-6 rounded-xl bg-gradient-to-br from-cyan-50 to-blue-50 border border-cyan-100 hover:shadow-lg transition-shadow">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-cyan-600 to-blue-600 rounded-full mb-4">
-                <Brain className="w-8 h-8 text-white" />
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">🧠 Bilingual</h3>
-              <p className="text-gray-600">English & Telugu batches available</p>
-            </div>
-
-            <div className="text-center p-6 rounded-xl bg-gradient-to-br from-cyan-50 to-blue-50 border border-cyan-100 hover:shadow-lg transition-shadow">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-cyan-600 to-blue-600 rounded-full mb-4">
-                <Rocket className="w-8 h-8 text-white" />
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">🚀 Project-Based</h3>
-              <p className="text-gray-600">Real-world deployment and portfolio guidance</p>
-            </div>
+            ))}
           </div>
         </div>
       </section>
 
+      {/* Featured Courses Section */}
       <section className="py-20 bg-gradient-to-br from-white via-cyan-50 to-blue-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
