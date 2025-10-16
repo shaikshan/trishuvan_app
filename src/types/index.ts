@@ -19,7 +19,9 @@ export interface Internship {
   duration: string;
   focus: string;
   tools: string[];
+  image?: string; // <-- add this line (optional)
 }
+
 
 export interface Project {
   id: string;
